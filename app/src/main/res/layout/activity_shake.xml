@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_shake"
+        tools:context="com.asiainfo.shake.shakeexample.ShakeActivity">
+
+    <ImageView
+            android:contentDescription="@string/app_name"
+            android:id="@+id/shake_sucess"
+            android:src="@drawable/shake_sucess"
+            android:layout_width="@dimen/activity_img_shake"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/shake_faild"
+            android:layout_height="@dimen/activity_img_shake"/>
+
+    <ImageView
+            android:contentDescription="@string/app_name"
+            android:id="@+id/shake_faild"
+            android:src="@drawable/shake_faild"
+            android:layout_width="@dimen/activity_img_shake"
+            android:layout_centerInParent="true"
+            android:layout_height="@dimen/activity_img_shake"/>
+
+    <TextView
+            android:text="@string/main_text"
+            android:id="@+id/txt_show_count"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shake_faild"
+            android:layout_alignRight="@+id/shake_faild"
+            android:layout_alignEnd="@+id/shake_faild"/>
+</RelativeLayout>
